@@ -27,12 +27,12 @@ FROM film;
 
 -- 5.- Counting records for database insights:
 -- 5.1 Determine the number of stores that the company has.
-SELECT store_id, COUNT(*) AS number_of_stores
+SELECT COUNT(*) AS number_of_stores
 FROM store
 GROUP BY store_id;
 
 -- 5.2 Determine the number of employees that the company has.
-SELECT staff_id, COUNT(*) AS number_of_employees
+SELECT COUNT(*) AS number_of_employees
 FROM staff
 GROUP BY staff_id;
 
