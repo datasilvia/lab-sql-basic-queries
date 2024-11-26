@@ -27,12 +27,12 @@ FROM film;
 
 -- 5.- Counting records for database insights:
 -- 5.1 Determine the number of stores that the company has.
-SELECT COUNT(*) AS number_of_stores
+SELECT COUNT(*) 
 FROM store
 GROUP BY store_id;
 
 -- 5.2 Determine the number of employees that the company has.
-SELECT COUNT(*) AS number_of_employees
+SELECT COUNT(*) 
 FROM staff
 GROUP BY staff_id;
 
@@ -46,7 +46,7 @@ SELECT COUNT(DISTINCT inventory_id) AS rented_films
 FROM rental;
 
 -- 5.4 Determine the number of distinct last names of the actors in the database.
-SELECT last_name, COUNT(*) AS number_of_last_names
+SELECT COUNT(*) 
 FROM actor
 GROUP BY last_name;
 
